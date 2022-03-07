@@ -22,5 +22,32 @@
 |촞 개발기간 | 1/19 (수요일) ~ 3/8(화요일) | *모두가 열심히 했다    |*모두가 열심히 했다 |
 
 ## 📓 Assignment:
-Satellite Image Semantic Segmentation
 
+**Satellite Cloud Image Semantic Segmentation**
+
+**Level One ⭐:**  구름 검출 모델 구현:
+DeeplabV3 + HRNet 모델 튜닝 하고 150 epoch 학습 진행하기. 
+
+**Level Two ⭐⭐:** EDA를 통해 데이터 분석, 검출 모델 성능 향상:
+
+1️⃣ Val 이미지 shape이 각기 다름 
+
+➡ zero-padding 제일 큰 이미지 사이즈에 맞추기
+
+➡️ 제일 작은 이미지에 맞춰서 이미지 crop 하기
+
+➡️ train data와 동일하게 random cropping (train epoch수에 맞게 적절한 학습 epoch수 고려 필)
+
+
+2️⃣ 단일 class VS 멀티 class
+
+➡️ 잩은 구름, 옅은 구름, 그림자 3개의 class 동시검출과 단일 검출 시 성능 비교 실험
+
+➡️ 단일 검출이 더 좋은 성능을 보일것이라 예상되지만,
+라벨과 mIoU 계산을 위해 단일 출력된 predict를 어떻게 합칠 것인가에 대한 접근 중요
+
+## 💬 발표 자료:
+| **밢표:**   | **링크:** | 
+| ------------- | ------------- |
+| **중간 발표**  | "link"  |
+| **최종 발표**  | Content Cell  |
